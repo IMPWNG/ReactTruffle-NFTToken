@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.3;
 
-import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
+import '@openzeppelin/contracts/token/ERC721/IERC721.sol';
 import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 import '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 
 contract RFT is ERC20 {
 
     uint public icoSharePrice;
-    uint public icoShareSupply;
+    uint public icoShareSupply; 
     uint public icoEnd;
 
     uint public nftId;
@@ -51,7 +51,7 @@ contract RFT is ERC20 {
         _mint(msg.sender, shareAmount);         
     }
 
-    function withdrawProfits() external {
+    function withdrawIcoProfits() external {
         require(msg.sender == admin, 'only admin');
         require(block.timestamp > icoEnd, 'ICO not finished yet');
         uint daiBalance = dai.balanceOf(address(this));
