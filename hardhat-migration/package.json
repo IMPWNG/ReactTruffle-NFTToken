@@ -1,0 +1,33 @@
+{
+  "name": "hardhat-migration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": " <Matisse>",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.1",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.3",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.0.32",
+    "hardhat": "^2.1.1"
+  },
+  "dependencies": {
+    "@nomiclabs/buidler": "^1.4.8",
+    "@openzeppelin/contracts": "^4.0.0-beta.1",
+    "@symfoni/buidler-react": "^0.0.21",
+    "@symfoni/buidler-typechain": "^0.2.1",
+    "@typechain/ethers-v5": "^2.0.0",
+    "buidler-deploy": "^0.6.0-beta.35",
+    "buidler-ethers-v5": "^0.2.3",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^9.1.1",
+    "typechain": "^3.0.0",
+    "typescript": "^4.2.3"
+  }
+}
